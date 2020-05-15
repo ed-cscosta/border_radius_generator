@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Border-Radius</h2>
+      <p>
+        Created with
+        <svg
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="#FF3838"
+            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+          ></path>
+        </svg>
+        by @ed_cscosta
+      </p>
+    </header>
+
+    <div class="generator" id="box">
+      <div class="generator_patterns" id="pattern"></div>
+      <span class="generator_pointer" id="left"></span>
+      <span class="generator_pointer" id="right"></span>
+      <span class="generator_pointer" id="top"></span>
+      <span class="generator_pointer" id="bottom"></span>
+    </div>
+
+    <div class="definitions">
+      <div class="pattern_generated">
+        <p>Border Radius:</p>
+        <div class="pattern">
+          <p id="patternText"></p>
+          <button>Copy</button>
+        </div>
+      </div>
+      <div class="custom_size">
+        <p>Custom Size:</p>
+        <div class="inputs">
+          <label for="inputBoxWidth">
+            <span>Width:</span>
+            <input type="text" id="inputBoxWidth" name="inputBoxWidth" />
+          </label>
+          <label for="inputBoxHeight">
+            <span>Height:</span>
+            <input type="text" id="inputBoxHeight" name="inputBoxHeight" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

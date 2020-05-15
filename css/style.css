@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: block;
+  margin: 50px 20px;
+}
+header h2 {
+  color: #7872d3;
+  font-weight: bold;
+  font-size: 48px;
+}
+header p {
+  color: #7872d3;
+  font-weight: bold;
+  font-size: 14px;
+}
+header p svg {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (max-width: 640px) {
+  header {
+    margin-top: 20px;
+  }
+}
+
+.generator {
+  display: block;
+  width: 50vmin;
+  height: 50vmin;
+  border: 2px dashed #7872d3;
+  margin: auto;
+  position: relative;
+}
+@media screen and (max-width: 640px) {
+  .generator {
+    width: 60vmin;
+    height: 60vmin;
+  }
+}
+.generator .generator_patterns {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #7872d3;
+  background: linear-gradient(90deg, #7872d3 0%, rgba(120, 114, 211, 0.5018382353) 100%);
+}
+.generator .generator_pointer {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  touch-action: none;
+}
+.generator .generator_pointer.active::before {
+  border: 5px solid #3a3a3a;
+  transition: border 0.25s ease-in-out;
+}
+.generator .generator_pointer::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #59c3ff;
+  transform: rotate(45deg);
+  border: 5px solid transparent;
+  transition: border 0.25s ease-in-out;
+}
+.generator .generator_pointer#left {
+  top: 0%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+.generator .generator_pointer#right {
+  top: 0%;
+  right: -1rem;
+  transform: translateY(-50%);
+}
+.generator .generator_pointer#top {
+  left: 0%;
+  top: -1rem;
+  transform: translateX(-50%);
+}
+.generator .generator_pointer#bottom {
+  left: 0%;
+  bottom: -1rem;
+  transform: translateX(-50%);
+}
+
+.definitions {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+.definitions .pattern_generated {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+.definitions .pattern_generated p {
+  color: #7872d3;
+  font-size: 18px;
+  font-weight: 600;
+}
+.definitions .pattern_generated .pattern {
+  display: flex;
+}
+.definitions .pattern_generated .pattern #patternText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #e8e8e8;
+  font-weight: 400;
+  padding: 0px 20px;
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.definitions .pattern_generated .pattern button {
+  background-color: #ff3838;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  width: 60px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.definitions .custom_size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+.definitions .custom_size p {
+  color: #7872d3;
+  font-size: 18px;
+  font-weight: 600;
+}
+.definitions .custom_size .inputs {
+  display: flex;
+}
+.definitions .custom_size .inputs label {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.definitions .custom_size .inputs label input {
+  border: none;
+  color: #000;
+  background: #e8e8e8;
+  font-weight: 400;
+  padding: 0px 20px;
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-size: 18px;
+}
+@media screen and (max-width: 640px) {
+  .definitions {
+    width: 100%;
+  }
+  .definitions .pattern_generated {
+    flex-direction: column;
+  }
+  .definitions .pattern_generated p {
+    margin-bottom: 20px;
+  }
+  .definitions .pattern_generated .pattern #patternText {
+    margin: 0;
+    font-size: 12px;
+  }
+  .definitions .custom_size {
+    flex-direction: column;
+  }
+  .definitions .custom_size p {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
