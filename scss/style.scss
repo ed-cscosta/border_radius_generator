@@ -12,6 +12,12 @@ body {
   margin: auto;
 }
 
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 header {
   display: block;
   margin: 50px 20px;
@@ -26,9 +32,9 @@ header {
     font-weight: bold;
     font-size: 14px;
 
-    svg {
+    img {
       width: 14px;
-      height: 10px;
+      height: 11px;
     }
   }
 
