@@ -11,6 +11,7 @@
   var patternText = document.getElementById("patternText");
   var inputBoxWidth = document.getElementById("inputBoxWidth");
   var inputBoxHeight = document.getElementById("inputBoxHeight");
+  var copyBtn = document.getElementById("copyBtn");
 
   // Bind Events
   document.addEventListener("touchstart", dragStart, false);
@@ -22,6 +23,7 @@
   document.addEventListener("mousemove", drag, false);
   inputBoxWidth.addEventListener("change", changeBoxSize, false);
   inputBoxHeight.addEventListener("change", changeBoxSize, false);
+  copyBtn.addEventListener("click", copyPattern, false);
 
   _render();
 
@@ -30,8 +32,8 @@
     document.getElementById("bottom").style.left = positions.bottom + "%";
     document.getElementById("left").style.top = positions.left + "%";
     document.getElementById("right").style.top = positions.right + "%";
-    pattern.style.borderRadius = _calc_pattern();
-    patternText.innerHTML = _calc_pattern();
+    pattern.style.borderRadius = _calcPattern();
+    patternText.innerHTML = _calcPattern();
   }
 
   function dragStart(event) {
@@ -75,11 +77,13 @@
 
   function dragEnd() {
     isActive = false;
-    document.getElementById(selectedId).classList.remove("active");
+    if (selectedId) {
+      document.getElementById(selectedId).classList.remove("active");
+    }
     selectedId = null;
   }
 
-  function _calc_pattern() {
+  function _calcPattern() {
     return `${positions.top}% ${100 - positions.top}% ${
       100 - positions.bottom
     }% ${positions.bottom}% / ${positions.left}% ${positions.right}% ${
@@ -93,5 +97,14 @@
     } else {
       box.style.height = event.target.value + "px";
     }
+  }
+
+  function copyPattern() {
+    const el = document.createElement("textarea");
+    el.value = `border-radius: ${_calcPattern()}`;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
   }
 })();
