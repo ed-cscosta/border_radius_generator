@@ -4,11 +4,9 @@ Demo: https://ed-cscosta.github.io/border_radius_generator/
 
 ## :computer: Ferramentas Utilizadas
 
-- <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg" width="30" height="20" /> **Node Js** — Contrução da api com a framework ExpressJS 🔨
-- <img src="https://cdn.svgporn.com/logos/vue.svg" width="30" height="20" /> **Vue Js** — Desenvolvimento do Frontend 🔥
-- <img src="https://cdn.svgporn.com/logos/sass.svg" width="30" height="20" /> **Sass** — CSS com superpoderes 😁
-- <img src="https://cdn.svgporn.com/logos/mongodb.svg" width="30" height="20" /> **MongoDB** — Para guardar informação na base de dados 💾
-
+- <img src="https://cdn.svgporn.com/logos/html-5.svg" width="30" height="20" /> **HTML**
+- <img src="https://cdn.svgporn.com/logos/sass.svg" width="30" height="20" /> **Sass**
+- <img src="https://cdn.svgporn.com/logos/javascript.svg" width="30" height="20" /> **Javascript**
 
 
 ## Projeto
