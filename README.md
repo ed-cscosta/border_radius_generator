@@ -14,9 +14,9 @@ Artigo: [https://9elements.com/blog/css-border-radius/](https://9elements.com/bl
 Webiste para gerar border-radius pattern de uma forma fácil e intuitiva.
 
 
-## Frontend Preview
+## Preview
 
-<h1 align="center"><img align="center" src="./github_assets/preview.png" alt="Omnistack 11 Web" width="400"></img></h1>
+<h1 align="center"><img align="center" src="./github_assets/preview.png" alt="Preview" width="400"></img></h1>
 
 
 <p align="center">Feito com 💖 by Eduardo Costa  😍</p>
