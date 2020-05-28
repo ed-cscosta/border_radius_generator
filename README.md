@@ -1,17 +1,19 @@
 <h1 align="center"> Border Radius Generator </h1>
 
 Demo: https://ed-cscosta.github.io/border_radius_generator/
+[Artigo com a ideia](https://9elements.com/blog/css-border-radius/)
 
 ## :computer: Ferramentas Utilizadas
 
-- <img src="https://cdn.svgporn.com/logos/html-5.svg" width="30" height="20" /> **HTML**
-- <img src="https://cdn.svgporn.com/logos/sass.svg" width="30" height="20" /> **Sass**
-- <img src="https://cdn.svgporn.com/logos/javascript.svg" width="30" height="20" /> **Javascript**
+<img src="https://cdn.svgporn.com/logos/html-5.svg" width="50" height="50" />
+<img src="https://cdn.svgporn.com/logos/sass.svg" width="50" height="50" /> 
+<img src="https://cdn.svgporn.com/logos/javascript.svg" width="50" height="50" />
 
 
 ## Projeto
 
-Projecto simples de como enviar ficheiros de imagem para o backend/CDN. O objectivo do projecto é apenas para fins educacionais.
+Webiste para gerar border-radius pattern de uma forma fácil e intuitiva.
+
 
 ## Frontend Preview
 
