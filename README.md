@@ -16,7 +16,7 @@ Webiste para gerar border-radius pattern de uma forma fácil e intuitiva.
 
 ## Preview
 
-<h1 align="center"><img align="center" src="./github_assets/preview.png" alt="Preview" width="400"></img></h1>
+<h1 align="center"><img align="center" src="./github_assets/preview.PNG" alt="Preview" width="400"></img></h1>
 
 
 <p align="center">Feito com 💖 by Eduardo Costa  😍</p>
